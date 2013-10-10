@@ -1,7 +1,8 @@
 DipCortex Eagle Library
 =======================
 
-Eagle Library for the DipCortex / WiFi DipCortex
+Eagle Library for DipCortex / WiFi DipCortex Integration
+Created with Eagle Cad 6.4
 
 WiFi DipCortex : http://www.soldersplash.co.uk/products/wifi-dipcortex/
 
