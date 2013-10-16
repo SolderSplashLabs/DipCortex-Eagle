@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Gnd" color="11" fill="1" visible="yes" active="yes"/>
@@ -338,7 +338,7 @@
 <pin name="GND" x="-27.94" y="10.16" length="middle" direction="pwr" swaplevel="1"/>
 <pin name="P0_14/AN3" x="-27.94" y="15.24" length="middle" swaplevel="1"/>
 <pin name="P0_12/AN1" x="-27.94" y="20.32" length="middle" swaplevel="1"/>
-<pin name="P0_1/RESET" x="-27.94" y="25.4" length="middle" swaplevel="1"/>
+<pin name="P0_0/RESET" x="-27.94" y="25.4" length="middle" swaplevel="1"/>
 <pin name="P0_23/AN7" x="-27.94" y="2.54" length="middle" swaplevel="1"/>
 <pin name="P0_16/AN5" x="-27.94" y="7.62" length="middle" swaplevel="1"/>
 <pin name="P1_31" x="-27.94" y="12.7" length="middle" swaplevel="1"/>
@@ -351,7 +351,7 @@
 <pin name="P0_9/SPI0-MOSI" x="-27.94" y="-12.7" length="middle" swaplevel="1"/>
 <pin name="P1_24" x="-27.94" y="-15.24" length="middle" swaplevel="1"/>
 <pin name="P0_4/I2C-SCLK" x="-27.94" y="-17.78" length="middle" swaplevel="1"/>
-<pin name="P1_3/TXD" x="-27.94" y="-20.32" length="middle" swaplevel="1"/>
+<pin name="P1_13/TXD" x="-27.94" y="-20.32" length="middle" swaplevel="1"/>
 <pin name="P1_14/RXD" x="-27.94" y="-22.86" length="middle" swaplevel="1"/>
 <pin name="P1_22/SPI1-MOSI" x="30.48" y="-22.86" length="middle" swaplevel="1" rot="R180"/>
 <pin name="P0_17/RXD" x="30.48" y="-20.32" length="middle" swaplevel="1" rot="R180"/>
@@ -361,7 +361,7 @@
 <pin name="P0_18/RXD" x="30.48" y="-10.16" length="middle" swaplevel="1" rot="R180"/>
 <pin name="P1_15/SPI1-CLK" x="30.48" y="-7.62" length="middle" swaplevel="1" rot="R180"/>
 <pin name="P1_16" x="30.48" y="-5.08" length="middle" swaplevel="1" rot="R180"/>
-<pin name="P1_25" x="30.48" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="P1_25" x="30.48" y="-2.54" length="middle" swaplevel="1" rot="R180"/>
 <pin name="P1_19/SPI1-SSEL" x="30.48" y="0" length="middle" swaplevel="1" rot="R180"/>
 <pin name="GND@3" x="30.48" y="2.54" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
 <pin name="5V" x="30.48" y="5.08" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
@@ -388,7 +388,7 @@
 <connect gate="G$1" pin="GND" pad="P$7"/>
 <connect gate="G$1" pin="GND@2" pad="P$12"/>
 <connect gate="G$1" pin="GND@3" pad="P$31"/>
-<connect gate="G$1" pin="P0_1/RESET" pad="P$1"/>
+<connect gate="G$1" pin="P0_0/RESET" pad="P$1"/>
 <connect gate="G$1" pin="P0_11/AN0" pad="P$2"/>
 <connect gate="G$1" pin="P0_12/AN1" pad="P$3"/>
 <connect gate="G$1" pin="P0_13/AN2" pad="P$4"/>
@@ -407,6 +407,7 @@
 <connect gate="G$1" pin="P0_7" pad="P$39"/>
 <connect gate="G$1" pin="P0_8/SPI0-MISO" pad="P$15"/>
 <connect gate="G$1" pin="P0_9/SPI0-MOSI" pad="P$16"/>
+<connect gate="G$1" pin="P1_13/TXD" pad="P$19"/>
 <connect gate="G$1" pin="P1_14/RXD" pad="P$20"/>
 <connect gate="G$1" pin="P1_15/SPI1-CLK" pad="P$27"/>
 <connect gate="G$1" pin="P1_16" pad="P$28"/>
@@ -421,7 +422,6 @@
 <connect gate="G$1" pin="P1_27/TXD" pad="P$36"/>
 <connect gate="G$1" pin="P1_28" pad="P$40"/>
 <connect gate="G$1" pin="P1_29/SPI0-CLK" pad="P$13"/>
-<connect gate="G$1" pin="P1_3/TXD" pad="P$19"/>
 <connect gate="G$1" pin="P1_31" pad="P$6"/>
 </connects>
 <technologies>
@@ -435,7 +435,7 @@
 <connect gate="G$1" pin="GND" pad="P$7"/>
 <connect gate="G$1" pin="GND@2" pad="P$12"/>
 <connect gate="G$1" pin="GND@3" pad="P$31"/>
-<connect gate="G$1" pin="P0_1/RESET" pad="P$1"/>
+<connect gate="G$1" pin="P0_0/RESET" pad="P$1"/>
 <connect gate="G$1" pin="P0_11/AN0" pad="P$2"/>
 <connect gate="G$1" pin="P0_12/AN1" pad="P$3"/>
 <connect gate="G$1" pin="P0_13/AN2" pad="P$4"/>
@@ -454,6 +454,7 @@
 <connect gate="G$1" pin="P0_7" pad="P$39"/>
 <connect gate="G$1" pin="P0_8/SPI0-MISO" pad="P$15"/>
 <connect gate="G$1" pin="P0_9/SPI0-MOSI" pad="P$16"/>
+<connect gate="G$1" pin="P1_13/TXD" pad="P$19"/>
 <connect gate="G$1" pin="P1_14/RXD" pad="P$20"/>
 <connect gate="G$1" pin="P1_15/SPI1-CLK" pad="P$27"/>
 <connect gate="G$1" pin="P1_16" pad="P$28"/>
@@ -468,7 +469,6 @@
 <connect gate="G$1" pin="P1_27/TXD" pad="P$36"/>
 <connect gate="G$1" pin="P1_28" pad="P$40"/>
 <connect gate="G$1" pin="P1_29/SPI0-CLK" pad="P$13"/>
-<connect gate="G$1" pin="P1_3/TXD" pad="P$19"/>
 <connect gate="G$1" pin="P1_31" pad="P$6"/>
 </connects>
 <technologies>
